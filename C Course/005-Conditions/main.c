@@ -12,12 +12,16 @@ int main()
         printf("You're a kid");
     }
 
-    else if(age == 24){
+    else if(age >= 24 && age <= 59){
         printf("You are %d years old", age);
     }
 
+    else if(age == 60 || age == 65){
+        printf("Very old")
+    }
+
     else{
-        printf("Very old");
+        printf("Very Very old");
     }
     return 0;
 }
